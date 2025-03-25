@@ -10,9 +10,7 @@ echo "Repo init: done!"
 echo "******************"
 echo "******************"
 
-# Modify update package.
-rm -rf packages/apps/Updater
-git clone https://github.com/bittencourtjulival/packages_apps_Updater.git -b vic packages/apps/Updater
+rm -rf hardware/xiaomi
 echo "*******************************"
 echo "Modified update package success"
 echo "*******************************"
