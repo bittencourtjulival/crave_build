@@ -10,8 +10,16 @@ echo "Repo init: done!"
 echo "******************"
 echo "******************"
 
+# Modify update package.
+rm -rf packages/apps/Updater
+git clone https://github.com/bittencourtjulival/packages_apps_Updater.git -b vic packages/apps/Updater
+echo "*******************************"
+echo "Modified update package success"
+echo "*******************************"
+echo ""
+
 # Clone local_manifests repository
-git clone -b main https://github.com/bittencourtjulival/local_manifests.git .repo/local_manifests
+git clone -b evox https://github.com/bittencourtjulival/local_manifests.git .repo/local_manifests
 echo "*****************************"
 echo "*****************************"
 echo "Local manifest clone: done"
@@ -26,7 +34,7 @@ echo "*****************************"
 # Export
 export BUILD_USERNAME=bittencourtjulival
 export BUILD_HOSTNAME=crave
-export TZ="TZ=Asia/Dhaka"
+export TZ="America/Sao_Paulo"
 echo "*****************************"
 echo "Export: Done!"
 echo "*****************************"
